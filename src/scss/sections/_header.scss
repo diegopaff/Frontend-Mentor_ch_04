@@ -1,0 +1,31 @@
+@use '../abstracts' as abs;
+
+
+.header{
+    height: 100svh;
+    background-image: url('../../assets/image-header.jpg');
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h1{
+        font-family: abs.$Fraunces;
+        font-weight: 900;
+        font-size: 3.5rem;
+        text-align: center;
+        letter-spacing: abs.$h1-spacing;
+        color: abs.$white;
+        margin-top: 80px;   
+    }
+
+    & > img{
+        transform: scale(1.5);
+        transform-origin: 0 ;
+        margin-top: 80px;
+    }
+
+    
+}
