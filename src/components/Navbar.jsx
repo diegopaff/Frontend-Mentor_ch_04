@@ -16,16 +16,32 @@ const Navbar = () => {
     <nav className='navigation'>
       <div>
         <img className='navigation__logo' src={logoSvg} />
-        <img className='navigation__menu' onClick={toggleNav} src={menuSvg} />
+        <img className='navigation__menu-icon' onClick={toggleNav} src={menuSvg} />
       </div>
       {
-        openNav && 
-        <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li><button>Contact</button></li>
+        !openNav && 
+        <ul className='navigation__menu'>
+            <li className='navigation__menu-item'>About</li>
+            <li className='navigation__menu-item'>Services</li>
+            <li className='navigation__menu-item'>Projects</li>
+            <li className='navigation__menu-item'><button>CONTACT</button></li>
         </ul>
+
+      }
+      {
+        openNav &&
+        <div className='navigation__menu-container'>
+          <div className='little-triangle'>
+
+          </div>
+          <ul className='navigation__menu'>
+            <li className='navigation__menu-item'>About</li>
+            <li className='navigation__menu-item'>Services</li>
+            <li className='navigation__menu-item'>Projects</li>
+            <li className='navigation__menu-item'><button>CONTACT</button></li>
+          </ul>
+
+        </div>
       }
     </nav>
   )
