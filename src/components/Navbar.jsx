@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logoSvg from '../assets/logo.svg';
-import menuSvg from '../assets/icon-hamburger.svg'
+import menuSvg from '../assets/mobile/icon-hamburger.svg'
 
 import '../scss/components/_Navbar.scss'
 
@@ -20,11 +20,11 @@ const Navbar = () => {
       </div>
       {
         !openNav && 
-        <ul className='navigation__menu'>
-            <li className='navigation__menu-item'>About</li>
-            <li className='navigation__menu-item'>Services</li>
-            <li className='navigation__menu-item'>Projects</li>
-            <li className='navigation__menu-item'><button>CONTACT</button></li>
+        <ul className='navigation__menu-desktop'>
+            <li className='navigation__menu-desktop-item'>About</li>
+            <li className='navigation__menu-desktop-item'>Services</li>
+            <li className='navigation__menu-desktop-item'>Projects</li>
+            <li className='navigation__menu-desktop-item'><button>CONTACT</button></li>
         </ul>
 
       }

@@ -19,8 +19,8 @@
     }
 
     &__logo{
-        transform: scale(1.3);
-        transform-origin: 0;
+        width: 170px;
+        object-fit: contain;
     }
 
     &__menu-icon{
@@ -38,6 +38,10 @@
         flex-direction: column;
         list-style: none;
         width: calc(100% - 60px);
+
+        &-desktop{
+            display: none;
+        }
     }
 
     &__menu-container{
@@ -81,31 +85,41 @@
     .navigation{
       flex-direction: row;
       font-size: calc(18px *1);
+      color: abs.$white;
+      padding: 48px 60px;
 
       &__menu-icon{
         display: none;
       }
 
-      &__menu-container{
 
+      &__menu-container{
+        display: none;
       }
-      &__menu{
+      &__menu-desktop{
+        display: flex;
+        font-size: 20px;
         flex-direction: row;
-        gap: 30px;
+        gap: 60px;
         background: none;
         align-items: center;
         margin-top: 5px;
         padding-block: 0;
+        list-style: none;
 
         &-item{
             padding-block: 0;
 
-
             & button{
                 background-color: abs.$white;
-                padding-inline: 20px;
-                padding-block:15px;
-                font-size: calc(18px *1);
+                font-family:abs.$Fraunces;
+                font-weight: 900;
+                padding-inline: 30px;
+                padding-block:20px;
+                font-size: 15px;
+                border-radius: 50px;
+                border: 0px;
+                cursor: pointer;
             }
         }
       }
