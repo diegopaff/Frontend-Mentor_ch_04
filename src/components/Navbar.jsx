@@ -21,9 +21,9 @@ const Navbar = () => {
       {
         !openNav && 
         <ul className='navigation__menu-desktop'>
-            <li className='navigation__menu-desktop-item'>About</li>
-            <li className='navigation__menu-desktop-item'>Services</li>
-            <li className='navigation__menu-desktop-item'>Projects</li>
+            <li className='navigation__menu-desktop-item'> <a href='#About'> About </a></li>
+            <li className='navigation__menu-desktop-item'><a href='#'>  Services </a></li>
+            <li className='navigation__menu-desktop-item'><a href='#'>  Projects </a></li>
             <li className='navigation__menu-desktop-item'><button>CONTACT</button></li>
         </ul>
 
@@ -35,9 +35,9 @@ const Navbar = () => {
 
           </div>
           <ul className='navigation__menu'>
-            <li className='navigation__menu-item'>About</li>
-            <li className='navigation__menu-item'>Services</li>
-            <li className='navigation__menu-item'>Projects</li>
+            <li className='navigation__menu-item'><a href='#About'> About </a></li>
+            <li className='navigation__menu-item'><a href='#Services'>  Services </a></li>
+            <li className='navigation__menu-item'><a href='#Projects'>  Projects </a></li>
             <li className='navigation__menu-item'><button>CONTACT</button></li>
           </ul>
 

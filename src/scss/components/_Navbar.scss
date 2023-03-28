@@ -53,7 +53,11 @@
     &__menu-item{
         text-align: center;
         padding-block: 20px;
-
+        text-decoration: none;
+        & a{
+            text-decoration: none;
+            color: abs.$dark-grayish-blue;   
+        }
         & button{
             background-color: abs.$yellow;
             font-family:abs.$Fraunces;
@@ -109,7 +113,11 @@
 
         &-item{
             padding-block: 0;
-
+            & a{
+                text-decoration: none;
+                color: abs.$white;
+                
+            }
             & button{
                 background-color: abs.$white;
                 font-family:abs.$Fraunces;

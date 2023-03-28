@@ -1,0 +1,88 @@
+
+@use '../abstracts' as abs;
+
+.about{
+
+    &-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr .5fr;
+        
+        
+        
+        & img{
+            grid-row: 1;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .about__info{
+            grid-row: 2 / span 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            align-items: center;
+            justify-content: center;
+            background-color: abs.$background-about;
+            padding: 82px 32px;
+
+            h2{
+                font-family: abs.$Fraunces;
+                font-size: calc(18px *2.3);
+                font-weight: 900;
+                text-align: center;
+                padding-inline: 15px;
+                color: abs.$very-dark-desaturated-blue;
+            }
+            p{
+                font-family: abs.$Barlow;
+                font-weight: 600;
+                font-size: calc(18px *1.2);
+                color: abs.$dark-grayish-blue;
+                text-align: center;
+                line-height: 32px;   
+            }
+
+            a{
+                font-family: abs.$Fraunces;
+                font-weight: 900;
+                text-decoration: none;
+                color: abs.$very-dark-desaturated-blue;
+                position: relative;
+                transform-style: preserve-3d;
+                
+            }
+
+            &-linkYellow::before{
+                content: '';
+                width: 120%;
+                height: 50%;
+                left: -10%;
+                top: 12px;
+                border-radius: 5px;
+                opacity: 30%;
+                position: absolute;
+                transform: translateZ(-1px);
+                background-color: abs.$yellow;
+            }
+
+            &-linkRose::before{
+                content: '';
+                width: 120%;
+                height: 50%;
+                left: -10%;
+                top: 12px;
+                border-radius: 5px;
+                opacity: 30%;
+                position: absolute;
+                transform: translateZ(-1px);
+                background-color: abs.$soft-red;
+            }
+
+           
+
+        }
+    }
+
+
+}

@@ -6,7 +6,7 @@ import '../scss/sections/_header.scss'
 
 const Header = () => {
   return (
-    <header className='header'>
+    <header id='home' className='header'>
         <Navbar/>
         <h1>WE ARE CREATIVES</h1>
         <img src={arrowDown} alt='scroll down'/>
