@@ -9,16 +9,16 @@ const About = () => {
   return (
     <section id='About' className='about'>
         <div className="about-container">
-            <img src={serviceTransform} alt='Transform your brand'/>
-            <div className="about__info">
+            <div className='about__img-transform'></div>
+            <div className="about__info transform">
                 <h2>Transform your brand</h2>
                 <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
                 <a className='about__info-linkYellow' href='#'>LEARN MORE</a>
             </div>
         </div>
         <div className="about-container">
-            <img src={serviceStandOut} alt='Stand out of the competition'/>
-            <div className="about__info">
+            <div className='about__img-stand-out'></div>
+            <div className="about__info stand-out">
                 <h2>Stand out to the right audience</h2>
                 <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
                 <a href='#' className='about__info-linkRose'>LEARN MORE</a>
