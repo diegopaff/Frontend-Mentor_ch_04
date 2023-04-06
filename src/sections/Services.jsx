@@ -4,7 +4,7 @@ import '../scss/sections/_services.scss'
 
 const Services = () => {
   return (
-    <div id='services' className='services-container'>
+    <div id='Services' className='services-container'>
         <div className="graphic-design service">
             <h2 className="service__title">Graphic Design</h2>
             <p className="service__description">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients attention.</p>

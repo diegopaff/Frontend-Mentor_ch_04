@@ -2,6 +2,9 @@
 
 .services-container{
 
+    display: flex;
+    flex-direction: column;
+
     .service{
         height: 80svh;
         display: flex;
@@ -10,18 +13,18 @@
         align-items: center;
         gap: 32px;
         padding-bottom: 64px;
-        padding-inline: 32px;
+        padding-inline: 28px;
         color: abs.$dark-desaturated-cyan;
 
         &__title{
-            font-size: calc(18px *2);
+            font-size: calc(18px *1.8);
             font-family: abs.$Fraunces;
         }
 
         &__description{
             font-family: abs.$Barlow;
             font-weight: 900;
-            font-size: calc(18px *1.2);
+            font-size: calc(18px *1);
             text-align: center;
             line-height: 32px;   
         }
@@ -42,6 +45,41 @@
 
     
     
+}
+
+
+@media (min-width: 1024px) {
+
+    .services-container{
+        flex-direction: row;
+
+        .service{
+            flex:1;
+
+            &__title{
+                font-size: calc(18px *2);
+               
+            }
+    
+            &__description{
+                font-size: calc(18px *1.1);
+                max-width: 450px;
+            
+            }
+        }
+
+
+        .graphic-design{
+            background-image: url(../../assets/desktop/image-graphic-design.jpg);
+            
+        }
+    
+        .photography{
+            background-image: url(../../assets/desktop/image-photography.jpg);
+            
+        }
+    }
+
 }
 
 
