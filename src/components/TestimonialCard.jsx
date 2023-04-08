@@ -5,7 +5,7 @@ import '../scss/components/TestimonialCard.scss';
 const TestimonialCard = (info) => {
 
 
-  console.log(info.avatar);
+  
   return (
     <div className='testimonial'>
         <img className='testimonial__avatar' src={info.avatar}/>

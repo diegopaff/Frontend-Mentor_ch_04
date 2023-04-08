@@ -40,3 +40,41 @@
     background-position: center;
    }
 }
+
+
+@media (min-width: 1024px) {
+
+    .projects-container{
+        display: grid;
+        grid-template-rows: 1;
+        grid-template-columns: 4;
+        height: 60vh;
+     
+    
+    
+       .milk{
+        background-image: url('../../assets/desktop/image-gallery-milkbottles.jpg');
+        grid-row: 1;
+        grid-column: 1;
+       }
+    
+       .orange{
+        background-image: url('../../assets/desktop/image-gallery-orange.jpg');
+        grid-row: 1;
+        grid-column: 2;
+       }
+    
+       .icecream{
+        background-image: url('../../assets/desktop/image-gallery-cone.jpg');
+        grid-row: 1;
+        grid-column: 3;
+       }
+    
+       .sugar{
+        background-image: url('../../assets/desktop/image-gallery-sugarcubes.jpg');
+        grid-row: 1;
+        grid-column: 4;
+       }
+    }
+
+}

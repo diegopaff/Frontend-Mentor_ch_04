@@ -1,0 +1,9 @@
+@use '../abstracts' as abs;
+
+
+.footer-container{
+    background-color: abs.$background-footer;
+    height: 40vh;
+
+    
+    }

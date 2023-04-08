@@ -18,7 +18,7 @@ const Navbar = () => {
         <img className='navigation__logo' src={logoSvg} />
         <img className='navigation__menu-icon' onClick={toggleNav} src={menuSvg} />
       </div>
-      {
+      { //Navbar desktop
         !openNav && 
         <ul className='navigation__menu-desktop'>
             <li className='navigation__menu-desktop-item'> <a href='#About'> About </a></li>
@@ -28,7 +28,7 @@ const Navbar = () => {
         </ul>
 
       }
-      {
+      { // Navbar mobile
         openNav &&
         <div className='navigation__menu-container'>
           <div className='little-triangle'>
