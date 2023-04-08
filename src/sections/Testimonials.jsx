@@ -8,8 +8,12 @@ const Testimonials = () => {
 
  
   return (
-    <div id='Testimonials' className='testimonial'>
-        {dataTestimonials.map((el, index)=> <TestimonialCard {...el} key={index}/>)}
+    <div id='Testimonials' className='testimonials'>
+
+      <h2>CLIENT TESTIMONIALS</h2>
+      <div className='testimonialCard-container'>
+        {dataTestimonials.map((el, index)=> <TestimonialCard {...el} key={index}/>)}  
+      </div>
         
     </div>
   )

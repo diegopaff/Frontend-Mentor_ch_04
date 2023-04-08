@@ -1,7 +1,44 @@
-.testimonial{
+@use '../abstracts' as abs;
+
+.testimonials{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: blue;
+    justify-content: center;
+    background-color: abs.$background-about;
+    padding-block: abs.$general-spacing*2;
+
+    & h2{
+        font-size: calc(18px *1.2);
+        font-family: abs.$Fraunces;
+        color: abs.$grayish-blue;
+        letter-spacing: 5px;
+        margin-top: 16px;
+        
+    }
+
+    & .testimonialCard-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .testimonials{
+        padding-block: abs.$general-spacing*4;
+
+
+        & .testimonialCard-container{
+            flex-direction: row;
+            padding-inline: 32px*5;
+            padding-block: 32px;
+            gap: 32px;
+        }
+    }
+
+
+
 }
