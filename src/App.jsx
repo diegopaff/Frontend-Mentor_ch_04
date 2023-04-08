@@ -4,6 +4,7 @@ import About from '../src/sections/About'
 import './App.scss'
 import Services from './sections/Services'
 import Testimonials from './sections/Testimonials'
+import Projects from './sections/Projects'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Services />
       <Testimonials />
+      <Projects />
     </div>
   )
 }
