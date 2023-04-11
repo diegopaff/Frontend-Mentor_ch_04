@@ -21,7 +21,7 @@ const Navbar = () => {
       { //Navbar desktop
         !openNav && 
         <ul className='navigation__menu-desktop'>
-            <li className='navigation__menu-desktop-item'> <a href='#About'> About </a></li>
+            <li className='navigation__menu-desktop-item'> <a href='#About' > About </a></li>
             <li className='navigation__menu-desktop-item'><a href='#Services'>  Services </a></li>
             <li className='navigation__menu-desktop-item'><a href='#Projects'>  Projects </a></li>
             <li className='navigation__menu-desktop-item'><button>CONTACT</button></li>

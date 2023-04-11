@@ -3,7 +3,55 @@
 
 .footer-container{
     background-color: abs.$background-footer;
-    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: abs.$general-spacing*3;
+    gap: abs.$general-spacing*2;
 
+
+    .footer__logo{
+        width: 200px;
+        
+        
+    }
+
+    .footer__navigation{
+        display: flex;
+        gap: abs.$general-spacing*1.7;
+        list-style: none;
+        font-family: abs.$Barlow;
+        font-size: 22px;
+        font-weight: 900;
+        color: abs.$dark-moderate-cyan;
+
+        a{
+            text-decoration: none;
+            color: abs.$dark-moderate-cyan;
+        }
+        a:visited{
+            text-decoration: none;
+        }
     
+    }
+
+    .footer__socialContact{
+        list-style: none;
+        display: flex;
+        justify-items: end;
+        gap: abs.$general-spacing;
+        padding-inline: 50px ;
+        margin-top: abs.$general-spacing*2;
+        
+
+        .Icons{
+            width: 30px;
+        }
+    }
+    }
+
+    @media (min-width: 1024px) {
+        .footer__navigation{
+            gap: abs.$general-spacing*9;
+        }
     }
